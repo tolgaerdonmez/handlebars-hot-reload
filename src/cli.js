@@ -2,7 +2,9 @@ import yargs from "yargs";
 
 export const getCliArgs = (processArgv) =>
   yargs(processArgv)
-    .usage("Usage: -t <template path> -d <json data path>")
+    .usage(
+      "Usage: -t <template path> -d <json data path> -o <output path> -s <save output>"
+    )
     .option({
       t: {
         alias: "templatePath",
@@ -22,5 +24,19 @@ export const getCliArgs = (processArgv) =>
         demandOption: false,
         describe: "HTTP Port you want to serve the file",
         type: "number",
+      },
+      o: {
+        alias: "outputPath",
+        demandOption: false,
+        describe: "Save the created html output to given path",
+        type: "string",
+      },
+      s: {
+        alias: "saveOutput",
+        demandOption: false,
+        describe:
+          "Whether to save the created html output to the same directory as the template, this will override the -o / --outputPath option",
+        type: "boolean",
+        default: false,
       },
     }).argv;
