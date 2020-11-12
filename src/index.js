@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import http from "http";
 import fs from "fs";
 import path from "path";
@@ -95,5 +96,5 @@ function main() {
     console.log(`Listening on port ${HTTP_PORT}`);
   });
 }
-
 main();
+// export default main;
