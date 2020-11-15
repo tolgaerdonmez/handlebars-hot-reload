@@ -144,3 +144,4 @@ dist
 
 src/templates
 mock.json
+yarn.lock

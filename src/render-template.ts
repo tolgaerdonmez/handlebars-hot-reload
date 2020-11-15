@@ -1,7 +1,7 @@
 const { readFile } = require("fs").promises;
 const hbs = require("handlebars");
 
-async function renderTemplate(data, templateName) {
+export async function renderTemplate(data: any, templateName: string) {
   const html = await readFile(templateName, "utf-8");
 
   // creates the Handlebars template object
@@ -14,5 +14,3 @@ async function renderTemplate(data, templateName) {
 
   return rendered;
 }
-
-module.exports = { renderTemplate };

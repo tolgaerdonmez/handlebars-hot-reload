@@ -1,9 +1,9 @@
 import yargs from "yargs";
 
-export const getCliArgs = (processArgv) =>
+export const getCliArgs = (processArgv: any) =>
   yargs(processArgv)
     .usage(
-      "Usage: -t <template path> -d <json data path> -o <output path> -s <save output>"
+      "Usage: handlebars-hot-reload -t <template path> -d <json data path> -o <output path> -s <save output>"
     )
     .option({
       t: {
