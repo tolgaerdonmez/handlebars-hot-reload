@@ -25,7 +25,7 @@ yarn global add handlebars-hot-reload
 ## Usage
 
 ```shell
-Usage: handlebars-hot-reload -t <template path> -d <json data path> -o <output path> -s <save output>
+Usage: handlebars-hot-reload -t <template path> -j <json data path> -o <output path> -s <save output>
 
 Options:
       --help          Show help                                        [boolean]
