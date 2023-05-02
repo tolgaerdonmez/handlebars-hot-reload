@@ -39,6 +39,8 @@ Options:
   -s, --saveOutput    Whether to save the created html output to the same
                       directory as the template, this will override the -o /
                       --outputPath option             [boolean] [default: false]
+  -m, --strictMode    Whether to compile handlebar template in strict mode or not
+                                                      [boolean] [default: true]
 ```
 
 ## Author
