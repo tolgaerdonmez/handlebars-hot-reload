@@ -39,4 +39,11 @@ export const getCliArgs = (processArgv: any) =>
         type: "boolean",
         default: false,
       },
+      m: {
+        alias: "strictMode",
+        demandOption: false,
+        describe: "Whether to compile handlebar template in strict mode or not",
+        type: "boolean",
+        default: true,
+      }
     }).argv;
