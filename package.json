@@ -1,6 +1,6 @@
 {
   "name": "handlebars-hot-reload",
-  "version": "1.0.12",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "author": "Tolga Erdönmez",
